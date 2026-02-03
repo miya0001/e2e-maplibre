@@ -1,4 +1,4 @@
-# スマートマップ焼津 E2Eテスト
+# スマートマップE2Eテスト
 
 Playwright + Cucumber を使用した E2E テストスイート
 
