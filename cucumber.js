@@ -13,7 +13,6 @@ module.exports = {
     ],
     formatOptions: {
       snippetInterface: 'async-await'
-    },
-    publishQuiet: true
+    }
   }
 };

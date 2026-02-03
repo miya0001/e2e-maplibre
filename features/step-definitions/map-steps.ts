@@ -51,6 +51,9 @@ Then('地図の表示位置が変わること', async function (this: Playwright
   // Verification that pan action completed without error
   const isVisible = await this.mapPage.isMapVisible();
   expect(isVisible).toBe(true);
+
+  const center = await this.mapPage.getMapCenter();
+  console.log(`ドラッグ後の中心: 緯度 ${center.lat}, 経度 ${center.lng}`);
 });
 
 // Double click zoom
@@ -79,7 +82,7 @@ Then('ズームレベルが{float}以下であること', async function (this: 
 });
 
 // Center position assertions
-Then('地図の中心が緯度{float}、経度{float}付近であること', async function (
+Then('地図の中心が緯度{float}、経度{float}であること', async function (
   this: PlaywrightWorld,
   lat: number,
   lng: number
