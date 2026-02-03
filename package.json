@@ -1,0 +1,22 @@
+{
+  "name": "smartmap-yaizu-e2e",
+  "version": "1.0.0",
+  "description": "E2E tests for Smart Map Yaizu using Playwright and Cucumber",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "HEADLESS=false cucumber-js",
+    "test:debug": "DEBUG=true HEADLESS=false cucumber-js",
+    "report": "node scripts/generate-report.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/test": "^1.41.0",
+    "@types/node": "^20.11.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:maps.yaizu-smartcity.jp)",
+      "Bash(npm install)",
+      "Bash(npx playwright install:*)",
+      "Bash(npm test:*)"
+    ]
+  }
+}
