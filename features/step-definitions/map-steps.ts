@@ -16,6 +16,9 @@ Then('ページタイトルが {string} を含むこと', async function (this: 
 Then('地図が表示されていること', async function (this: PlaywrightWorld) {
   const isVisible = await this.mapPage.isMapVisible();
   expect(isVisible).toBe(true);
+
+  const center = await this.mapPage.getMapCenter();
+  console.log(`地図の中心: 緯度 ${center.lat}, 経度 ${center.lng}`);
 });
 
 // Zoom steps
